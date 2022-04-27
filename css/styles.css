@@ -50,14 +50,6 @@ body {
   border-radius: 20px 20px 0 0;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 30px;
-}
-
 .hero_title {
   color: var(--white);
   font-size: 1.7rem;
@@ -66,9 +58,31 @@ body {
 
 .hero_title--mod {
   color: var(--soft-violet);
+  filter: blur(.6px) saturate(200%);
 }
 
 .hero_paragraph {
   line-height: 23px;
   font-size: 1.05rem;
 }
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    line-height: 23px;
+  }
+
+  .info-title {
+      color: var(--white);
+      font-size: 1.3rem;
+      font-family: var(--font-title);
+  }
+
+  .info-letter {
+      color: var(--trasparent-white-stat);
+      text-transform: uppercase;
+      font-size: 0.9rem;
+  }
