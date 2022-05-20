@@ -100,3 +100,39 @@ body {
 }
 
 /*This is the second part, when viewport size is (1440px or more width)*/
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 1260px;
+    height: 420px;
+    display: grid;
+    grid-template-areas: 
+      "section1 header"
+      "section2 header";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .transparency {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-modifier {
+    grid-area: header;
+  }
+
+  #text1 {
+    grid-area: section1;
+  }
+
+  #text2 {
+    grid-area: section2;
+  }
+
+}
